@@ -1,0 +1,56 @@
+body{
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.wrapper {
+    display: flex;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+}
+.img-image {
+    margin: 30px 0px;
+}
+
+@keyframes spin{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes move{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(30deg);
+    }
+}
+@keyframes moving2{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-16deg);
+    }
+}
+#circle{
+    transform: rotate(180deg);
+    animation:spin 5s infinite linear;
+}
+#grass{
+    transform: translateX(30deg);
+    animation:move 3s ease-in-out alternate infinite;
+}
+#forest{
+    transform: translateX(-10deg);
+    animation:moving2 3s ease-in-out alternate infinite ;
+}
